@@ -1,8 +1,8 @@
 const SYMBOLS_COUNT = {
-    A: 2,
-    B: 4,
-    C: 6,
-    D: 8,
+    A: 6,
+    B: 10,
+    C: 14,
+    D: 20,
   };
   
   const SYMBOL_VALUES = {
@@ -106,7 +106,9 @@ const SYMBOLS_COUNT = {
     balance -= totalBet;
   
     const reels = spin();
-    animateResult(reels, getWinnings(reels, bet, lines));
+    const winnings = getWinnings(reels, bet, lines); // Calculate winnings
+    balance += winnings; // Add winnings to the balance
+    animateResult(reels, winnings);
   
     balanceDisplay.textContent = balance.toFixed(2);
   
@@ -115,3 +117,4 @@ const SYMBOLS_COUNT = {
       spinButton.disabled = true;
     }
   });
+  
