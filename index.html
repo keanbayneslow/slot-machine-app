@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slot Machine Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Slot Machine Game</h1>
+    <div id="balanceDisplay">Balance: $<span id="balance">100</span></div>
+    <div id="betDisplay">Bet per line: $<input type="number" id="betInput" min="1" step="0.50" value="1"></div>
+    <div id="linesDisplay">Number of lines: <input type="number" id="linesInput" min="1" max="3" value="1"></div>
+    <div id="reels" class="reels-container">
+        <div class="reel"></div>
+        <div class="reel"></div>
+        <div class="reel"></div>
+      </div>
+    <button id="spinButton">Spin</button>
+    <div id="resultDisplay"></div>
+  </div>
+
+  <div id="awareness-section">
+    <h2>Gambling Addiction Awareness</h2>
+    <p>While playing games like these can be entertaining, it's important to remember that gambling addiction is a serious issue that affects many people. If you or someone you know is struggling with gambling addiction, help is available.</p>
+    <p>Gambling addiction, like any addiction, can have devastating effects on individuals and their families. It can lead to financial ruin, relationship problems, and mental health issues.</p>
+    <p>If you feel that your gambling habits are becoming uncontrollable, seek help immediately. You are not alone, and there are resources available to support you on your journey to recovery.</p>
+    <p>Please visit <a href="https://www.gamblinghelponline.org.au/" target="_blank">Gambling Help Online</a> for confidential and free support services.</p>
+  </div>
+
+  <script src="project.js"></script>
+</body>
+</html>
